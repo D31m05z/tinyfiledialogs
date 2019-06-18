@@ -1,4 +1,4 @@
-forked from https://git.code.sf.net/p/tinyfiledialogs/code
+forked from https://sourceforge.net/p/tinyfiledialogs (git clone https://git.code.sf.net/p/tinyfiledialogs/code)
 
 tiny file dialogs ( cross-platform C C++ ) v3.3.9 [Apr 14, 2019] zlib licence
  _________
