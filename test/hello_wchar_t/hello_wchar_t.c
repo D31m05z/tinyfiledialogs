@@ -12,7 +12,7 @@
 		|                               |
 		| this file is for windows only |
 		|_______________________________|
-	  
+
 Please upvote my stackoverflow answer https://stackoverflow.com/a/47651444
 
 tiny file dialogs (cross-platform C C++)
@@ -86,7 +86,8 @@ misrepresented as being the original software.
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include "tinyfiledialogs.h"
+#include "tinyfiledialogs/tinyfiledialogs.h"
+
 int main(void) /* WINDOWS ONLY */
 {
 	int lIntValue;
@@ -136,7 +137,7 @@ int main(void) /* WINDOWS ONLY */
 		lIntValue = tinyfd_messageBoxW(L"Hello World",
 			L"Console mode is not implemented for wchar UTF-16",
 			L"ok", L"info", 1);
-		tinyfd_forceConsole = ! lIntValue ;		
+		tinyfd_forceConsole = ! lIntValue ;
 	}
 
 	lTmp = tinyfd_inputBoxW(
