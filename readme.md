@@ -1,5 +1,20 @@
 forked from https://sourceforge.net/p/tinyfiledialogs (git clone https://git.code.sf.net/p/tinyfiledialogs/code)
 
+Build:
+```bash
+mkdir build && cd build
+cmake ../ -DCMAKE_INSTALL_PREFIX=install
+cmake --build . --target install
+```
+
+Usage:
+```bash
+project(test)
+find_package(tinyfiledialogs REQUIRED)
+add_executable(${PROJECT_NAME} main.cpp)
+target_link_libraries(${PROJECT_NAME} PRIVATE ::tinyfiledialogs)
+```
+
 tiny file dialogs ( cross-platform C C++ ) v3.3.9 [Apr 14, 2019] zlib licence
  _________
 /         \   Beep Popup InputBox PasswordBox MessageBox ColorPicker
